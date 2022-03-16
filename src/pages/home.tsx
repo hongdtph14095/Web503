@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
 type Props = {}
 
-const Home=(props: Props) =>{
-    return(
-        <div>Home</div>
-    )
-}
-export default Home
+const home = (props: Props) => {
+  return (
+    <div>home</div>
+  )
+} 
+export default home
