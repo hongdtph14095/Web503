@@ -1,19 +1,51 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Dun",
+      "age": "21",
+      "price": "0511"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Linh",
+      "age": "24",
+      "price": "0311"
+    },
+    {
+      "name": "nguyen",
+      "price": "1",
+      "id": 3
+    },
+    {
+      "name": "nguyen",
+      "price": "1",
+      "id": 4
+    },
+    {
+      "name": "nguyen",
+      "price": "1",
+      "id": 5
+    },
+    {
+      "name": "nguyen",
+      "price": "1",
+      "id": 6
+    },
+    {
+      "name": "nguyen",
+      "price": "2",
+      "id": 7
+    },
+    {
+      "name": "nguyen",
+      "price": "2",
+      "id": 8
+    },
+    {
+      "name": "nguyen",
+      "price": "2",
+      "id": 9
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
