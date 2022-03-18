@@ -2,9 +2,9 @@ import React from 'react'
 
 type Props = {}
 
-const home = (props: Props) => {
+const Home = (props: Props) => {
   return (
     <div>home</div>
   )
 } 
-export default home
+export default Home

@@ -1,9 +1,13 @@
 import instance from "./instance"
 export const list = () =>{
-     const url = './products';
+     const url = '/products';
      return instance.get(url);
  }
-//  export const remove = () =>{
-//     const url = `/products/${id}`;
-//     return instance.delete(url);
-// }
+ export const remove = (id:number) =>{
+    const url = `/products/${id}`;
+    return instance.delete(url);
+}
+export const add = (product) => {
+    const url = `/products`;
+    return instance.post(url, product);
+}

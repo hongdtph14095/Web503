@@ -1,20 +1,20 @@
 {
     "products" :[
-        {
-            "id" :1,
-            "name": "Dún"
-        },
+         
         {
             "id" :2,
-            "name": "Gấm"
+            "name": "Gấm",
+            "price" : 311
         },
         {
             "id" :3,
-            "name": "Vân"
+            "name": "Vân",
+            "price" : 511
         },
         {
             "id" :4,
-            "name": "Đức"
+            "name": "Đức",
+            "price" : 111
         }
     ]
 }
