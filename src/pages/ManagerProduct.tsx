@@ -1,19 +1,22 @@
 import React from 'react'
 import { ProductType } from '../types/product'
+import {Link} from 'react-router-dom'
+
 
 type ManagerProductProps = {
-    data: ProductType[]
+    data: ProductType[], 
+    onRemove: (id: number) => void
 }
 
 const ManagerProduct = (props: ManagerProductProps) => {
   return (
     <div>
-        <table className="table">
+        <table className="table table-bordered">
             <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>#</th>
                     <th>Name</th>
-                    <th>Price</th>
+                    {/* <th>Price</th> */}
                 </tr>
             </thead>
             <tbody>
@@ -21,9 +24,10 @@ const ManagerProduct = (props: ManagerProductProps) => {
                 return <tr key={index}>
                         <td>{index + 1}</td>
                         <td>{item.name}</td>
-                        <td>{item.price}</td>
+                        {/* <td>{item.price}</td> */}
+                        <Link to={`/admin/product/${item.id}/edit`}>Edit</Link>
                         <td>
-                        {/* <button onClick={() => removeItem(item._id)}>Remove</button> */}
+                        { <button onClick={() => props.onRemove(item.id)}>Remove</button> }
                         </td>
                     </tr>
             })}
