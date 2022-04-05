@@ -158,8 +158,8 @@ const Header = () => {
             <div className="main_menu"> 
               <nav>  
                 <ul>
-                  <li className="active"><a href="index.html">Home </a></li>
-                  <li><a href="shop_category.html">shop </a></li>
+                  <li className="active"><a href="/">Home </a></li>
+                  <li><a href="product">shop </a></li>
                   <li><a href="about.html">About us</a></li>
                   <li><a href="#">pages <i className="fa fa-angle-down" /></a>
                     {/* <ul className="sub_menu pages">

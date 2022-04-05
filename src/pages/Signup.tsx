@@ -12,7 +12,7 @@ const Signup = () => {
     const navigate = useNavigate();
     const onSubmit: SubmitHandler<FormValues> = (data) => {
         signup(data);
-        navigate("/sigin");
+        navigate("/signin");
     }
   return (
     <div>

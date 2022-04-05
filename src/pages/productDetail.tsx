@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { ProductType } from '../types/productDetail'
 import { read } from '../api/product';
 import anh from '../img/product/product5.jpg'
+import '../css/detail.css'
 type ProductDetailProps = {
     products: ProductType[]
 }
