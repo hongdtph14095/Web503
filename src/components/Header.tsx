@@ -34,14 +34,14 @@ const Header = () => {
   <div className="header_top">
     <div className="container-fluid">   
       <div className="row align-items-center">
-        {/* <div className="col-lg-7 col-md-12">
-          <div className="welcome_text">
+        <div className="col-lg-7 col-md-12">
+          {/* <div className="welcome_text">
             <ul>
               <li><span>Free Delivery:</span> Take advantage of our time to save event</li>
               <li><span>Free Returns *</span> Satisfaction guaranteed</li>
             </ul>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
         <div className="col-lg-5 col-md-12">
           <div className="top_right text-right">
             <ul>

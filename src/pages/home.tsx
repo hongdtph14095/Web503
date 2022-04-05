@@ -193,26 +193,6 @@ const Home = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="footer_bottom">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-6 col-md-6">
-                  <div className="copyright_area">
-                    <p> © 2021 <strong> </strong> Mede with ❤️ by <a href="https://hasthemes.com/" target="_blank"><strong>HasThemes</strong></a></p>
-                  </div>
-                </div>
-                <div className="col-lg-6 col-md-6">
-                  <div className="footer_custom_links">
-                    <ul>
-                      <li><a href="#">Order History</a></li>
-                      <li><a href="wishlist.html">Wish List</a></li>
-                      <li><a href="#">Newsletter</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </footer>
 
 
