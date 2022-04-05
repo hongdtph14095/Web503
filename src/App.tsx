@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import logo from './logo.svg'
-import "antd/dist/antd.variable.min.css";
+// import "antd/dist/antd.variable.min.css";
 
 import ShowInfo from './components/ShowInfo'
 import type { ProductType } from './types/product';
@@ -17,18 +17,18 @@ import AdminLayout from './pages/layouts/AdminLayout';
 import "bootstrap/dist/css/bootstrap.min.css"
 import ProductAdd from './pages/productAdd';
 import ProductEdit from './pages/ProductEdit';
-import { ConfigProvider } from 'antd';
+// import { ConfigProvider } from 'antd';
 import Test from './components/Test';
 import PrivateRouter from './components/PrivateRouter';
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 
 
-ConfigProvider.config({
-  theme: {
-    primaryColor: '#25b864',
-  },
-});
+// ConfigProvider.config({
+//   theme: {
+//     primaryColor: '#25b864',
+//   },
+// });
 
 function App() {
   const [products, setProducts] = useState<ProductType[]>([]); // 1

@@ -2,6 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Menu from "./Menu";
 import Search from "./Search";
+import "../../css/plugins.css"
+import "../../css/style.css"
+
 
 const Header = () => {
   return (
@@ -70,11 +73,11 @@ const Header = () => {
           </div>
           <div className="col-lg-4">
             <div className="logo">
-              <a href="index.html"><img src="assets/img/logo/logo.png"  /></a>
+              <a href="index.html"><img src="src/img/logo/logo.png"  /></a>
             </div>
           </div>
           <div className="col-lg-4">
-            {/* <div className="cart_area">
+            <div className="cart_area">
               <div className="cart_link">
                 <a href="#"><i className="fa fa-shopping-basket" />2 item(s)</a>
                 <div className="mini_cart">
@@ -124,13 +127,13 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
       <div className="horizontal_menu">
         <div className="logo_container">
-          <a href="index.html"><img src="assets/img/logo/logo.png"  /></a>
+          <a href="index.html"><img src="src/img/logo/logo.png"  /></a>
         </div>
         <div className="right_menu">
           <div className="main_menu"> 
@@ -183,6 +186,8 @@ const Header = () => {
     </div>
   </div>
 </header>
+
+
 
   );
 };
