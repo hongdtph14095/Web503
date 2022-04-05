@@ -8,7 +8,6 @@ import type { ProductType } from './types/product';
 import { add, list, remove, update } from './api/product';
 import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
-import Product from './pages/Product';
 import Dashboard from './pages/dashboard';
 import ManagerProduct from './pages/ManagerProduct';
 import WebsiteLayout from './pages/layouts/WebsiteLayout';
@@ -23,7 +22,7 @@ import PrivateRouter from './components/PrivateRouter';
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import ProductDetail from './pages/productDetail';
-
+import Product from './pages/Product';
 // ConfigProvider.config({
 //   theme: {
 //     primaryColor: '#25b864',
@@ -67,7 +66,7 @@ function App() {
           <Route path=":id/products" element={<ProductDetail products={products} />} />
           </Route>
           <Route index element={<Home products={products} />} />
-          <Route path="product" element={<Product />} />
+          <Route path="product" element={<Product products={products} />} />
           <Route path="signup" element={<Signup />} />
           <Route path="signin" element={<Signin />} />
         </Route>
