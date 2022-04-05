@@ -24,6 +24,7 @@ const ManagerProduct = (props: ManagerProductProps) => {
                 return <tr key={index}>
                         <td>{index + 1}</td>
                         <td>{item.name}</td>
+                        <td>{item.price}</td>
                         {/* <td>{item.price}</td> */}
                         <Link to={`/admin/product/${item.id}/edit`}>Edit</Link>
                         <td>

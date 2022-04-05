@@ -6,7 +6,7 @@ import {Navigate} from 'react-router-dom'
 const PrivateRouter = (props: PrivateRouterProps) =>{
     const isAuth = true;
     if (isAuth) {
-        return <Navigate to={"/login"} />
+        return <Navigate to={"/signin"} />
     }
     return props.children
 }

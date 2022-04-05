@@ -70,7 +70,7 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path="signin" element={<Signin />} />
         </Route>
-        <Route path="admin" element={<PrivateRouter><AdminLayout /></PrivateRouter>}>
+        <Route path="admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="product">

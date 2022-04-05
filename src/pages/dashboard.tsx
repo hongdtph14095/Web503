@@ -3,6 +3,7 @@ type Props = {}
 
 const Dashboard = (props: Props) => {
     return (
+        <>
         <div className="min-h-full">
             ${'{'}AdminNav.render(){'}'}
             <header className="bg-white shadow">
@@ -20,6 +21,8 @@ const Dashboard = (props: Props) => {
                 </div>
             </main>
         </div>
+        </>
+        
 
 
     )
