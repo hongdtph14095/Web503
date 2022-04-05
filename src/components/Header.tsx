@@ -2,8 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Menu from "./Menu";
 import Search from "./Search";
-import "../../css/plugins.css"
-import "../../css/style.css"
+import "../css/plugins.css"
+import "../css/style.css"
 
 
 const Header = () => {

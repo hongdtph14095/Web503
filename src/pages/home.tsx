@@ -51,49 +51,53 @@ const Home = (props: HomeProps) => {
               </div>
             </div>
             <div className="row shop_wrapper">
-              <div className="col-lg-4 col-md-4 col-12 ">
-                <div className="single_product">
-                  <div className="product_thumb">
-                    <a className="primary_img" href="product-details.html"><img src="src/img/product/product15.jpg" /></a>
-                    <a className="secondary_img" href="product-details.html"><img src="src/img/product/product16.jpg" /></a>
-                    <div className="quick_button">
-                      <a href="product-details.html" title="quick_view">Xem sản phẩm</a>
-                    </div>
-                    <div className="double_base">
-                      <div className="product_sale">
-                        <span>-7%</span>
+              {props.products?.map((product) => {
+                return <>
+                  <div className="col-lg-4 col-md-4 col-12 ">
+                    <div className="single_product">
+                      <div className="product_thumb">
+                        <a className="primary_img" href="product-details.html"><img src="src/img/product/product15.jpg" /></a>
+                        <a className="secondary_img" href="product-details.html"><img src="src/img/product/product16.jpg" /></a>
+                        <div className="quick_button">
+                          <a href="product-details.html" title="quick_view">Xem sản phẩm</a>
+                        </div>
+                        <div className="double_base">
+                          <div className="product_sale">
+                            <span>-7%</span>
+                          </div>
+                          <div className="label_product">
+                            <span>new</span>
+                          </div>
+                        </div>
                       </div>
-                      <div className="label_product">
-                        <span>new</span>
+                      <div className="product_content grid_content">
+                        <h3>
+                        {product.name}
+                        </h3>
+                        <span className="current_price">{product.price}</span>
+                      </div>
+                      <div className="product_content list_content">
+                        <div className="product_ratting">
+                          <ul>
+                            <li><a href="#"><i className="fa fa-star" /></a></li>
+                            <li><a href="#"><i className="fa fa-star" /></a></li>
+                            <li><a href="#"><i className="fa fa-star" /></a></li>
+                            <li><a href="#"><i className="fa fa-star" /></a></li>
+                            <li><a href="#"><i className="fa fa-star" /></a></li>
+                          </ul>
+                        </div>
+                        <div className="product_price">
+                          <span className="current_price">£60.00</span>
+                        </div>
+                        <div className="product_desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad, iure incidunt. Ab consequatur temporibus non eveniet inventore doloremque necessitatibus sed, ducimus quisquam, ad asperiores eligendi quia fugiat minus doloribus distinctio assumenda pariatur, quidem laborum quae quasi suscipit. Cupiditate dolor blanditiis rerum aliquid temporibus, libero minus nihil, veniam suscipit? Autem repellendus illo, amet praesentium fugit, velit natus? Dolorum perferendis reiciendis in quam porro ratione eveniet, tempora saepe ducimus, alias?</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="product_content grid_content">
-                    <h3><a href="product-details.html">Marshall Portable  Bluetooth</a></h3>
-                    <span className="current_price">£60.00</span>
-                    <span className="old_price">£86.00</span>
-                  </div>
-                  <div className="product_content list_content">
-                    <h3><a href="product-details.html">Marshall Portable  Bluetooth</a></h3>
-                    <div className="product_ratting">
-                      <ul>
-                        <li><a href="#"><i className="fa fa-star" /></a></li>
-                        <li><a href="#"><i className="fa fa-star" /></a></li>
-                        <li><a href="#"><i className="fa fa-star" /></a></li>
-                        <li><a href="#"><i className="fa fa-star" /></a></li>
-                        <li><a href="#"><i className="fa fa-star" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="product_price">
-                      <span className="current_price">£60.00</span>
-                      <span className="old_price">£86.00</span>
-                    </div>
-                    <div className="product_desc">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad, iure incidunt. Ab consequatur temporibus non eveniet inventore doloremque necessitatibus sed, ducimus quisquam, ad asperiores eligendi quia fugiat minus doloribus distinctio assumenda pariatur, quidem laborum quae quasi suscipit. Cupiditate dolor blanditiis rerum aliquid temporibus, libero minus nihil, veniam suscipit? Autem repellendus illo, amet praesentium fugit, velit natus? Dolorum perferendis reiciendis in quam porro ratione eveniet, tempora saepe ducimus, alias?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                </>
+              })}
+
             </div>
           </div>
         </section>

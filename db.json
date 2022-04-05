@@ -3,18 +3,16 @@
     {
       "id": 1,
       "name": "Dun",
-      "age": "21",
       "price": "0511"
     },
     {
       "id": 2,
       "name": "Linh",
-      "age": "24",
       "price": "0311"
     },
     {
+      "price":"666",
       "name": "nguyen123",
-      "price": "1",
       "id": 5
     },
     {
