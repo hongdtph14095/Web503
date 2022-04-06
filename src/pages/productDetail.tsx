@@ -42,6 +42,7 @@ const productDetail = (props: ProductDetailProps) => {
                         </div>
                     </div>
                 </div>
+                
                 <div className="product_details">
                     <div className="container">
                         <div className="row">

@@ -60,7 +60,7 @@ const Home = (props: HomeProps) => {
                         <a className="primary_img" href="product-details.html"><img src="src/img/product/product15.jpg" /></a>
                         <a className="secondary_img" href="product-details.html"><img src="src/img/product/product16.jpg" /></a>
                         <div className="quick_button">
-                          <a href="product-details.html" title="quick_view"><Link to={`/detail/${product.id}/products`}>Xem sp</Link></a>
+                          <a href="" title="quick_view"><Link to={`/detail/${product.id}/products`}>Xem sp</Link></a>
                         </div>
                         <div className="double_base">
                           <div className="product_sale">
