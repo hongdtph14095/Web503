@@ -72,7 +72,7 @@ const AdminLayout = (props: Props) => {
           <div className="dashboard-ecommerce">
             <div className="container-fluid dashboard-content ">
               <div className="ecommerce-widget">
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                     <div className="card">
                       <div className="card-body">
@@ -129,9 +129,9 @@ const AdminLayout = (props: Props) => {
                       <div id="sparkline-revenue4" />
                     </div>
                   </div>
-                </div>
+                </div> */}
              
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                     <div className="card border-3 border-top border-top-primary">
                       <div className="card-body">
@@ -184,14 +184,14 @@ const AdminLayout = (props: Props) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="row">
                 <Outlet />
                 </div>
                 <br />
                 <br />
-                <div className="row">
+                {/* <div className="row">
                   <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
                     <div className="card">
                       <h5 className="card-header">Revenue by Category</h5>
@@ -211,7 +211,7 @@ const AdminLayout = (props: Props) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
