@@ -23,6 +23,7 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import ProductDetail from './pages/productDetail';
 import Product from './pages/Product';
+import about from './pages/about';
 // ConfigProvider.config({
 //   theme: {
 //     primaryColor: '#25b864',
@@ -67,6 +68,7 @@ function App() {
           </Route>
           <Route index element={<Home products={products} />} />
           <Route path="product" element={<Product products={products} />} />
+          <Route path="about" element={<about />} />
           <Route path="signup" element={<Signup />} />
           <Route path="signin" element={<Signin />} />
         </Route>
