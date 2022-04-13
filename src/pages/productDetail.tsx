@@ -19,7 +19,7 @@ const productDetail = (props: ProductDetailProps) => {
     const { register, formState: { errors }, reset } = useForm<Show>();
     useEffect(() => {
         const getProduct = async () => {
-            const { data } = await read(id);
+            const { data } = await read(_id);
             reset(data);
         };
         getProduct();

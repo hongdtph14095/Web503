@@ -57,12 +57,14 @@ const Home = (props: HomeProps) => {
                   <div className="col-lg-4 col-md-4 col-12 ">
                     <div className="single_product">
                       <div className="product_thumb">
-                        <a className="primary_img" href="product-details.html"><img src="src/img/product/product15.jpg" /></a>
-                        <a className="secondary_img" href="product-details.html"><img src="src/img/product/product16.jpg" /></a>
+                        <a className="primary_img" href=""> <Link to={`/detail/${product.id}/products`}><img src="src/img/product/product15.jpg" /></Link></a>
+                        <a className="secondary_img" href=""><Link to={`/detail/${product.id}/products`}><img src="src/img/product/product16.jpg" /></Link></a>
                         <div className="quick_button">
                           <a href="" title="quick_view"><Link to={`/detail/${product.id}/products`}>Xem sp</Link></a>
                         </div>
                         <div className="double_base">
+
+                          
                           <div className="product_sale">
                             <span>-7%</span>
                           </div>
