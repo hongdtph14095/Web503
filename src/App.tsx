@@ -52,6 +52,8 @@ function App() {
   const onHandleAdd = async (product: ProductType) => {
     // call api
     const { data } = await add(product);
+    console.log(data);
+    
     setProducts([...products, data])
   }
   const onHandleUpdate = async (product: ProductType) => {

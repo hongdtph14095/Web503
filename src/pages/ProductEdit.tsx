@@ -13,13 +13,13 @@ type FormInputs = {
 }
 
 const ProductEdit  = (props: ProductEditProps) =>{
-    const {id} = useParams();
+
     const {register, handleSubmit, formState: {errors}, reset} = useForm<FormInputs>()
     const navigate = useNavigate();
-
+const {id} = useParams();
     useEffect(() => {
         const getProduct = async() =>{
-            const {data} = await read(_id);
+            const {data} = await read(id);
             reset(data);
         }
         getProduct();
@@ -32,8 +32,8 @@ const ProductEdit  = (props: ProductEditProps) =>{
     }
     return(
         <form action="" onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" placeholder='Name san pham'{...register('name')} />
-            <input type="text" placeholder='Price san pham'{...register('price')} />
+            <input type="text" placeholder='Name san pham'{...register('name',{required:true})} />
+            <input type="text" placeholder='Price san pham'{...register('price',{required:true})} />
             <button>Update</button>
         </form>
     )
